@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submitted</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container w-25">
+        <h1 class="mb-5">Your Information:</h1>
+        <table class="table table-success table-striped">
+            <tbody>
+                <tr>
+                    <th scope="row">Your name:</th>
+                    <td>{{session.name}}</td>
+                </tr>
+                <tr>
+                    <th scope="row">Email:</th>
+                    <td>{{session.email}}</td>
+                </tr>
+                <tr>
+                    <th scope="row">Comments:</th>
+                    <td>{{session.comment}}</td>
+                </tr>
+                <tr>
+                    <th scope="row">Do you wish to receive emails?</th>
+                    <td>{{session.receive_emails}}</td>
+                </tr>
+                <tr>
+                    <th scope="row">What is the best way to get in touch with you?</th>
+                    <td>{{session.reach}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
